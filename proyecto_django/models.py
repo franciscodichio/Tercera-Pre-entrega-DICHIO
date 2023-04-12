@@ -41,4 +41,4 @@ class Contact(models.Model):
      crated_add = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de envio')
     
     
-    
+    #aa
