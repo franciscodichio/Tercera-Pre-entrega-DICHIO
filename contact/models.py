@@ -22,6 +22,21 @@ from django.db import models
 #     velocidad = models.IntegerField()
 #     fecha_creacion = models.DateField()
 
+
+# class Contact(models.Model):
+#     # Definición de campos del modelo
+
+#     class Meta:
+#         app_label = 'contact'
+
+
+class Contact(models.Model):
+    fields = ['name', 'email', 'message', 'contact_type', 'subscription']
+    
+    class Meta:
+        app_label = 'contact'
+       
+
 options = [
     [0, 'Pedido de informacion'],
     [1, 'Queja por un producto'],
