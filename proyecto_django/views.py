@@ -5,16 +5,26 @@ from .forms import ContactForm
 def cursoFormulario(request):
     
     
-     return render(request, "cursoFormulario.html")
+      return render(request, "cursoFormulario.html")
 
 
-def Contact(request):
-    contact_form = ContactForm()
-    return render(request, 'contact/contact.html', {'form': contact_form})
+# def Contact(request):
+#     contact_form = ContactForm()
+#     return render(request, 'contact/contact.html', {'form': contact_form})
+
+
+
+
+from contact.models import Contact as ContactModel
+
+def my_view(request):
+    my_contacts = ContactModel.objects.all()
+    # Resto del código
+
 
 
 from .forms import ContactForm
-from .models import Contact
+# from .models import Contact
 
 def contact(request):
     if request.method == 'POST':

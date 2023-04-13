@@ -10,6 +10,13 @@ from proyecto_django.forms import ContactForm
     
 #      return render(request, "cursoFormulario.html")
 
+# from contact.models import Contact as ContactModel
+
+# def my_view(request):
+#     my_contacts = ContactModel.objects.all()
+    # Resto del código
+
+
 
 def Contact(request):
     contact_form = ContactForm()
